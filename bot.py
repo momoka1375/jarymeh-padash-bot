@@ -58,11 +58,8 @@ def report(update: Update, context: CallbackContext):
     for user, entries in data.items():
         total_penalty = sum(e['amount'] for e in entries if e['type'] == 'جریمه')
         total_reward = sum(e['amount'] for e in entries if e['type'] == 'پاداش')
-        text += f"@{user}:
-  جریمه: {total_penalty} تومان
-  پاداش: {total_reward} تومان
-"
-
+        text += f"@{user}: جریمه: {total_penalty} تومان پاداش: {total_reward} تومان"
+        
     update.message.reply_text(text)
 
 def main():
