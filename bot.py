@@ -32,8 +32,7 @@ def add_entry(update: Update, context: CallbackContext, entry_type='جریمه')
 
 def remove_entry(update: Update, context: CallbackContext):
     if len(context.args) < 2:
-        update.message.reply_text("استفاده صحیح:
-/حذف @کاربر شماره")
+        update.message.reply_text("استفاده صحیح:/حذف @کاربر شماره")
         return
 
     username = context.args[0].lstrip('@')
