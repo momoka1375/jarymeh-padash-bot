@@ -11,8 +11,7 @@ data = {}
 
 def add_entry(update: Update, context: CallbackContext, entry_type='جریمه'):
     if len(context.args) < 3:
-        update.message.reply_text(f"استفاده صحیح:
-/{entry_type} @کاربر مبلغ توضیح")
+        update.message.reply_text(f"استفاده صحیح:/{entry_type} @کاربر مبلغ توضیح")
         return
 
     username = context.args[0].lstrip('@')
