@@ -63,7 +63,7 @@ def report(update: Update, context: CallbackContext):
     update.message.reply_text(text)
 
 def main():
-    TOKEN = os.getenv("BOT_TOKEN")
+    TOKEN = os.getenv("7719555239:AAGBFO0gRs933ppHVP04nSmi-pikDSTLJtE")
     if not TOKEN:
         raise ValueError("BOT_TOKEN not found. Please define it in Render's environment settings.")
     updater = Updater(TOKEN)
