@@ -63,7 +63,7 @@ def report(update: Update, context: CallbackContext):
     update.message.reply_text(text)
 
 def main():
-    TOKEN = os.getenv("7719555239:AAGBFO0gRs933ppHVP04nSmi-pikDSTLJtE")
+    TOKEN = os.getenv("BOT_TOKEN")
     updater = Updater(TOKEN)
     dp = updater.dispatcher
 
